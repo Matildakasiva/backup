@@ -1,0 +1,93 @@
+.checkout-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #6a0dad;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.order-summary, .shipping-details {
+  margin-bottom: 20px;
+}
+
+.order-item {
+  display: flex;
+  align-items: center;
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.order-item-image {
+  max-width: 100px;
+  max-height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.order-item-info {
+  margin-left: 10px;
+}
+
+.order-item-info h3 {
+  margin: 0;
+  color: #6a0dad;
+}
+
+.order-item-info p {
+  margin: 5px 0;
+  color: #333;
+}
+
+.shipping-details {
+  margin-top: 20px;
+}
+
+.shipping-details h3 {
+  color: #6a0dad;
+}
+
+.shipping-details label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.shipping-details input,
+.shipping-details textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.shipping-details input[type="tel"] {
+  padding-right: 50px; /* Space for M-Pesa prompt */
+}
+
+.payment-button {
+  background-color: #7f3cd6;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.payment-button:hover {
+  background-color: #44da71;
+}

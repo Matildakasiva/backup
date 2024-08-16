@@ -1,0 +1,113 @@
+.my-events-list {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #6a1b9a;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 2.5em;
+  font-weight: 700;
+  text-align: center;
+  margin: 20px 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  letter-spacing: 0.5px;
+  padding: 10px 0;
+  border-bottom: 3px solid #6a1b9a;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+button {
+  background-color: #8a2be2;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff69b4;
+  transform: scale(1.05);
+}
+
+.events-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Reduced gap between cards */
+}
+
+.event-item {
+  flex: 1 1 calc(33.33% - 10px); /* Adjusted size to fit more cards in a row */
+  border: 1px solid #ddd;
+  padding: 10px; /* Reduced padding */
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  max-width: 300px; /* Set a maximum width for the cards */
+}
+
+.event-item:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.event-item img {
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 8px; /* Reduced margin */
+}
+
+.no-events-message {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.create-event-button {
+  background-color: #8a2be2;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.create-event-button:hover {
+  background-color: #ff69b4;
+  transform: scale(1.05);
+}
+
+.edit-button {
+  background-color: #8a2be2; /* Green */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.remove-button {
+  background-color: #8a2be2; /* Red */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.edit-button:hover, .remove-button:hover {
+  background-color: #ff69b4;
+  opacity: 0.8;
+}

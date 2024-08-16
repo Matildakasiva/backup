@@ -1,0 +1,47 @@
+.footer {
+  background-color: #343a40; /* Dark background for footer */
+  color: #f8f9fa; /* Light text color */
+  text-align: center; /* Center align text */
+}
+
+.footer-text {
+  margin: 0.5rem 0;
+}
+
+.footer-email,
+.footer-phone {
+  color: #f8f9fa; /* Default text color */
+  text-decoration: none;
+}
+
+.footer-email:hover,
+.footer-phone:hover {
+  text-decoration: underline;
+  color: #007bff; /* Blue color for email and phone on hover */
+  font-weight: bold; /* Make text bold on hover */
+}
+
+.chat-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: 2px solid #f8f9fa;
+  border-radius: 50%;
+  padding: 0.5rem;
+  background-color: #495057; /* Slightly lighter dark color for the chat button */
+}
+
+.chat-icon {
+  font-size: 1.5rem;
+  color: #f8f9fa; /* Light color for the icon */
+}
+
+@media (max-width: 768px) {
+  .footer-text {
+    font-size: 0.9rem;
+  }
+  .chat-icon {
+    font-size: 1.2rem;
+  }
+}

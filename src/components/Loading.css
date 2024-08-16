@@ -1,0 +1,31 @@
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loading {
+  width: 150px;
+  height: 150px;
+  border: 20px solid #ff69b4;
+  border-top: 20px solid #E0115F;
+  border-radius: 50%;
+  animation: spinner 1.5s linear infinite;
+}
+
+.spinner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.spinner p {
+  font-size: 19px;
+  font-weight: 300;
+}

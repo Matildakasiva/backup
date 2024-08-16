@@ -1,0 +1,86 @@
+/* src/components/MessageModal.css */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark translucent overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+  border-radius: 8px;
+  padding: 20px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.chat-box {
+  max-height: 300px;
+  overflow-y: auto;
+  margin-bottom: 15px;
+  padding-right: 20px; /* Space for the scroll */
+  background: linear-gradient(135deg, rgba(200, 162, 199, 0.6), rgba(150, 112, 190, 0.6), rgba(255, 182, 193, 0.6)); /* Mauve, purple, pink blend */
+  border-radius: 8px;
+}
+
+.message {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  max-width: 80%;
+}
+
+.message.user {
+  background-color: rgba(220, 248, 198, 0.8); /* Light green with translucency */
+  align-self: flex-end;
+}
+
+.message.receiver {
+  background-color: rgba(255, 255, 255, 0.8); /* Light white with translucency */
+  align-self: flex-start;
+}
+
+.chat-form {
+  display: flex;
+  align-items: center;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.send-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.send-icon {
+  font-size: 20px;
+  color: #4caf50; /* Green color */
+}
+
+.send-button:hover .send-icon {
+  color: #45a049; /* Darker green on hover */
+}

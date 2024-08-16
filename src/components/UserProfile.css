@@ -1,0 +1,28 @@
+.user-profile {
+  background-color: #f8f9fa;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  border-radius: 12px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+}
+
+.card-text {
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background-color: #a74caf; /* Match icon color */
+  border-color: #a74caf; /* Match border color */
+}
+
+.btn-primary:hover {
+  background-color: #8e5a9b; /* Slightly darker shade for hover */
+  border-color: #8e5a9b; /* Match border color */
+}

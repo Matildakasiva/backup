@@ -1,0 +1,102 @@
+.gallery-background {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #494848, #ffffff, #747272);
+  width: 100%;
+}
+
+.artwork-card-wrapper {
+  padding: 0;
+  margin: 0;
+}
+
+.artwork-card {
+  position: relative;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 8cm; /* Fixed width */
+  height: 6cm; /* Fixed height */
+}
+
+.artwork-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.artwork-card-image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.artwork-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.artwork-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.artwork-card:hover .artwork-overlay {
+  opacity: 1;
+}
+
+.overlay-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.overlay-title {
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.overlay-price {
+  font-size: 0.7rem;
+  margin-bottom: 0.5rem;
+}
+
+.btn-custom {
+  background: none;
+  border: none;
+  color: #6a0dad;
+  text-decoration: none;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+}
+
+.btn-custom:hover {
+  color: #4b0082;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.col-md-2 {
+  padding-left: 0;
+  padding-right: 0;
+}

@@ -1,0 +1,199 @@
+/* General page styles */
+.events-page {
+  margin: 0 auto;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-family: Arial, sans-serif;
+  width: 90%;
+}
+
+/* Header styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-bottom: 2px solid #ddd;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Authentication buttons */
+.auth-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.auth-button {
+  padding: 12px 25px;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #6a1b9a;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.auth-button:hover {
+  background-color: #4a0072;
+  transform: translateY(-2px);
+}
+
+/* Search bar styles */
+.search-bar {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  width: 100%;
+  max-width: 400px;
+  transition: border-color 0.3s;
+}
+
+.search-bar:focus {
+  border-color: #6a1b9a;
+  outline: none;
+}
+
+/* Event list styles */
+.events-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0 -1.5rem;
+}
+
+/* Ensure cards fill available space */
+.event-card {
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  flex: 1 1 calc(25% - 1.5rem);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.event-card:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.event-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
+.event-details {
+  padding: 1rem;
+}
+
+.event-title {
+  margin: 0 0 0.5rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.event-description {
+  margin: 0 0 1rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+.event-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Details link and booking button styles */
+.details-link, .booking-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 12px 25px;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.details-link {
+  color: #ffffff;
+  background-color: #d81b60;
+}
+
+.details-link:hover {
+  background-color: #c2185b;
+  transform: translateY(-2px);
+}
+
+.booking-button {
+  color: #ffffff;
+  background-color: #6a1b9a;
+}
+
+.booking-button:hover {
+  background-color: #4a0072;
+  transform: translateY(-2px);
+}
+
+.create-event-button {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #d81b60;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.create-event-button:hover {
+  background-color: #c2185b;
+  transform: translateY(-2px);
+}
+
+.event-controls {
+  display: flex;
+  gap: 1.5rem;
+  margin: 1rem 0;
+}
+
+.create-event-button, .my-events-button {
+  text-decoration: none;
+  padding: 12px 25px;
+  color: #ffffff;
+  background-color: #d81b60;
+  border-radius: 6px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.create-event-button:hover, .my-events-button:hover {
+  background-color: #c2185b;
+  transform: translateY(-2px);
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .events-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .events-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .events-list {
+    grid-template-columns: 1fr;
+  }
+}
